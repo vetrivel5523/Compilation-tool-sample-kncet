@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding-top: 5px;
+    background-color: #6b9ecb;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+header {
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.logo img {
+    height: 50%;
+    width: 100%;
+}
+
+.logo h1,
+h1 {
+    font-size: 16px;
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+}
+
+
+.card-content {
+    padding: 10px;
+}
+
+
+.button-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"],
+select {
+    margin-left: 10%;
+    margin-bottom: 6%;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 100%;
+    align-items: center !important;
+    border: 1px solid grey;
+}
+
+
+input[type="number"] {
+    margin-bottom: 6%;
+    padding: 4px;
+    font-size: 125%;
+}
+
+.select-div {
+    padding-top: 10px;
+}
+
+/* Responsive styles */
+/* Default styles */
+/* Add your default styles here */
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .input-section {
+        padding: 20px;
+    }
+
+    .input-section label {
+        margin-bottom: 5px;
+        /* Reduce margin for all labels */
+    }
+
+    .input-section select,
+    .input-section input[type="number"] {
+        width: calc(100% - 20px);
+        /* Adjusting width to accommodate padding */
+        box-sizing: border-box;
+        /* Ensuring padding is included in the width calculation */
+    }
+
+    .input-section button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Additional media queries for smaller screen sizes if needed */
+.semester-input input[type="number"] {
+    margin-top: 10px;
+}
+
+
+button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .semester-input {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .semester-input {
+        width: calc(100% - 10px);
+    }
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para{
+    text-align: left;
+    color: red;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#cgpa{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+.alert {
+    background-color: red;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    animation: dance 1s ease infinite alternate;
+}
+
+@keyframes dance {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:100;
+    font-size: 15px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNCET SGPA CALCULATOR</title>
+    <link rel="icon" href="/SGPA CALCULATOR/IMAGES/College Logo.png" />
+    <link rel="stylesheet" href="/SGPA CALCULATOR/CSS/style.css">
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <div class="logo">
+                <img src="/IMAGES/College background.png" alt="College Background">
+                <h1>KNCET-UGR2020</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="batch">Batch:</label>
+                <select id="batch">
+                    <option>Select...</option>
+                    <option value="2023-2027">2023-2027</option>
+                    <option value="2022-2026">2022-2026</option>
+                    <option value="2021-2025">2021-2025</option>
+                    <option value="2020-2024">2020-2024</option>
+                </select>
+            </div>
+            <div class="input-section">
+                <label for="department">Department:</label>
+                <select id="department">
+                    <option>Select...</option>
+                    <option value="ECE">ECE</option>
+                    <!-- <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="AD">AD</option>
+                    <option value="EEE">EEE</option>
+                    <option value="BME">BME</option>
+                    <option value="MECH">MECH</option>
+                    <option value="AGRI">AGRI</option>
+                    <option value="CIVIL">CIVIL</option> -->
+                </select>
+            </div>
+            <div class="input-section">
+                <label for="semester">Semester:</label>
+                <select id="semester">
+                    <option>Select...</option>
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="5">5th Semester</option>
+                    <option value="6">6th Semester</option>
+                    <option value="7">7th Semester</option>
+                    <option value="8">8th Semester</option>
+                </select>
+            </div>
+            <button onclick="showSubjects()">Enter</button>
+            <br>
+            <button onclick="resetInputs()">Reset</button>
+            <br>
+            <div id="subjects-section" style="display: none;">
+                <h1>Subjects</h1>
+                <h3 id="user-info"></h3>
+                <table id="subjects-table">
+                    <thead>
+                        <tr>
+                            <th>Subjectcode</th>
+                            <th>Subject</th>
+                            <th>Grade Point</th>
+                        </tr>
+                    </thead>
+                    <tbody id="subjects-body">
+                    </tbody>
+                </table>
+                <p class="para">*If non credit paper is applicable to choose an Passed/U.</p>
+                <br>
+                <div class="btn">
+                    <button onclick="calculateSGPA()">Calculate SGPA</button>
+                    <br>
+                </div>
+                <div id="sgpa-result"></div>
+            </div>
+
+        </main>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="footer">&copy; 2024 Designed by Vetrivel K,Tamilselvan S & Yogeshwaran S</p>
+        </div>
+    </div>
+
+    <script src="/SGPA CALCULATOR/JS/script.js"></script>
+</body>
+
+</html>

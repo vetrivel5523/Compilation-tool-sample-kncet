@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding-top: 25px;
+}
+
+#background-video {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    z-index: -5;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0px auto;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+header {
+    /* background-color: #fff; */
+    color: black;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.logo img {
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+main {
+    padding: 10px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+label {
+    padding-bottom: 15px;
+}
+
+.input-section {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+label,
+select {
+    display: block;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    padding-bottom: 25px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#cgpa-result {
+    width: 100%;
+    padding: 0.1px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #007bff;
+    font-weight: 1000;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 768px) {
+    #background-video {
+        display: none;
+    }
+
+    body {
+        background-color: #6b9ecb;
+    }
+
+    .logo img {
+        height: 50%;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .card {
+        max-width: 400px;
+        margin: 0px auto;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    label {
+        font-weight: 100;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding-bottom: 25px;
+    }
+
+    select {
+        font-weight: 100;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 15px;
+        color: black;
+    }
+
+}
